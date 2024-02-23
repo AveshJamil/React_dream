@@ -5,5 +5,6 @@
 - Local server ;
 - HMR ->Hot module Replacement ;
 - File Watching Algorithm Written in c++;
+- Caching faster Builds ;
 
  
