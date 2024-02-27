@@ -2,17 +2,31 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 
-const heading =React.createElement("h1",{id:"heading"},"avesh_dream");
 
-//console.log(heading);
+const elem=<span>This is element</span>;
 
-const jsxelement=<h1 id="heading"> Hello React  </h1>
+const Head1=()=>(
+    <div id="component">
+        <h1> Hello Last</h1>
 
-console.log(jsxelement);
+
+     </div>
+);
+const title=(
+    
+    <h1 className="head">  
+       {elem}
+    
+    This is my component Heading
+    <Head1/>
+
+    </h1>
+    );
+
 
 const root=ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(jsxelement);
+root.render(title);
 
 
 
