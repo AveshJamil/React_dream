@@ -3,7 +3,15 @@ import ReactDOM from "react-dom/client";
 
 
 
-const elem=<span>This is element</span>;
+const Elem=()=>(
+
+    <h1 className="hee">hello function Elem</h1>
+
+    
+
+
+
+);
 
 const Head1=()=>(
     <div id="component">
@@ -15,8 +23,7 @@ const Head1=()=>(
 const title=(
     
     <h1 className="head">  
-       {elem}
-    
+<Elem/>    
     This is my component Heading
     <Head1/>
 
