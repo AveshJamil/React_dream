@@ -12,7 +12,7 @@ const Header=()=>{
 
    <img className="Logo"
 
-     src="https://www.canva.com/p/templates/EAFowsrK6x8-red-and-yellow-catering-flat-illustrative-food-place-logo/"
+     src="https://static.vecteezy.com/system/resources/thumbnails/002/382/557/small/fast-food-logo-concept-free-vector.jpg"
    />
 
    </div>
@@ -52,7 +52,7 @@ const Header=()=>{
 
 const root=ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(Applayout);
+root.render(<Applayout/>);
 
 
 
