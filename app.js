@@ -1,39 +1,58 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+const Header=()=>{
+
+    return (
 
 
-const Elem=()=>(
+        <div className="header">
 
-    <h1 className="hee">hello function Elem</h1>
+   <div className="logo_containe">
 
-    
+   <img className="Logo"
+
+     src="https://www.canva.com/p/templates/EAFowsrK6x8-red-and-yellow-catering-flat-illustrative-food-place-logo/"
+   />
+
+   </div>
+   <div className="nav_items">
+
+   <ul>
+   <li>Home</li>
+   <li>About Us </li>
+   <li> Contact Us</li>
+   <li>Cart</li>
+   </ul>
+
+   </div>
+
+   </div>
 
 
 
-);
-
-const Head1=()=>(
-    <div id="component">
-        <h1> Hello Last</h1>
-
-
-     </div>
-);
-const title=(
-    
-    <h1 className="head">  
-<Elem/>    
-    This is my component Heading
-    <Head1/>
-
-    </h1>
+      
     );
+};
+
+ const Applayout =()=>{
+
+  return (
+
+    <div className="App">
+
+    <Header/>
+    </div>
+  );
+
+
+ }
+
 
 
 const root=ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(title);
+root.render(Applayout);
 
 
 
