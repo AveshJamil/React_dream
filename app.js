@@ -8,7 +8,7 @@ const Header=()=>{
 
         <div className="header">
 
-   <div className="logo_containe">
+   <div className="Logo_containe">
 
    <img className="Logo"
 
@@ -16,7 +16,7 @@ const Header=()=>{
    />
 
    </div>
-   <div className="nav_items">
+   <div className="nav-items">
 
    <ul>
    <li>Home</li>
@@ -34,6 +34,49 @@ const Header=()=>{
       
     );
 };
+const stylebackground={
+
+  backgroundColor:"#f0f0f0",
+  };
+
+const ResturantCard=()=>{
+
+  return(
+
+    <div className="res-card" style={stylebackground}>
+
+      <h1>Aslam Chic </h1>
+      <img src="https://www.delhitourism.gov.in/dttdc/food_tour/images/aslam_butter_chicken_corner.jpg">
+        
+      </img>
+    </div>
+
+
+  );
+}
+
+
+
+const Body =()=>{
+
+  return(
+
+
+
+  <div className="body">
+  <div className="search">Search</div>
+  <div className="res-container">
+  <ResturantCard />
+
+  </div>
+
+
+
+
+
+  </div>
+  ) 
+}
 
  const Applayout =()=>{
 
@@ -42,6 +85,7 @@ const Header=()=>{
     <div className="App">
 
     <Header/>
+    <Body />
     </div>
   );
 

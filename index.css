@@ -1,4 +1,45 @@
-#heading{
+.header{
 
-    color:red;
+    display:flex;
+    justify-content:space-between;
+    border: 1px solid black;
+
+}
+.Logo{
+
+    width:200px;
+}
+.nav-items {
+
+    padding: 8px 20px;
+
+
+}
+.nav-items > ul {
+    font-size: 24px;
+    display:flex;
+    List-style-type:none;
+
+ 
+}
+.nav-items > ul > li {
+
+padding: 10px;
+margin: 10px;
+
+
+}
+
+.res-card {
+
+    width:200px;
+    height:300px;
+    border:1px solid black;
+}
+
+.search {
+
+    padding:10px;
+
+
 }
