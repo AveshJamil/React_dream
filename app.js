@@ -41,23 +41,28 @@ const stylebackground={
 
 const ResturantCard=(props)=>{
 
-  const { rest_name}=props;
+  const { restData}=props;
 
-console.log(rest_name);
+
+  const {name, cuisines,avgRating,costForTwo,deliveryTime,cloudinaryImageId,sla}=restData?.info;
+
+
+
+console.log(restData);
 
   return(
 
     <div className="res-card" style={stylebackground}>
 
       <img className="res_logo"
-       alt="res_logo" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +rest_name.info.cloudinaryImageId}>
+       alt="res_logo" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +cloudinaryImageId}>
 
       </img>
-      <h1>{rest_name.info.name} </h1>
-      <h4>{rest_name.info.cuisines.join(',')}</h4>
-      <h4>{rest_name.info.avgRating} rating </h4>
-      <h4>{rest_name.info.costForTwo}  </h4>
-      <h4>{rest_name.info.sla.deliveryTime} minutes</h4>
+      <h1>{name} </h1>
+      <h4>{cuisines.join(',')}</h4>
+      <h4>{avgRating} rating </h4>
+      <h4>{costForTwo}  </h4>
+      <h4>{sla.deliveryTime} minutes</h4>
 
     </div>
 
@@ -79,7 +84,8 @@ const resList=[
         "Biryani",
         "American",
         "Snacks",
-        "Fast Food"
+        "Fast Food",
+        
       ],
       "avgRating": 4.2,
       "parentId": "547",
@@ -1810,25 +1816,9 @@ const Body =()=>{
   <div className="body">
   <div className="search">Search</div>
   <div className="res-container">
-  <ResturantCard  rest_name={resList[0]}  />
-  <ResturantCard  rest_name={resList[1]}  />
-  <ResturantCard  rest_name={resList[2]}  />
-  <ResturantCard  rest_name={resList[3]}  />
-  <ResturantCard  rest_name={resList[4]}  />
-  <ResturantCard  rest_name={resList[5]}  />
-  <ResturantCard  rest_name={resList[6]}  />
-  <ResturantCard  rest_name={resList[7]}  />
-  <ResturantCard  rest_name={resList[8]}  />
-  <ResturantCard  rest_name={resList[9]}  />
-  <ResturantCard  rest_name={resList[10]}  />
-  <ResturantCard  rest_name={resList[11]}  />
-  <ResturantCard  rest_name={resList[12]}  />
-  <ResturantCard  rest_name={resList[13]}  />
-  <ResturantCard  rest_name={resList[14]}  />
-  <ResturantCard  rest_name={resList[15]}  />
-  <ResturantCard  rest_name={resList[16]}  />
-  <ResturantCard  rest_name={resList[17]}  />
-  <ResturantCard  rest_name={resList[19]}  />
+ {resList.map((restcard)=>(<ResturantCard key={restcard.info.id} restData={restcard}/>)
+
+ )}
 
 
 
