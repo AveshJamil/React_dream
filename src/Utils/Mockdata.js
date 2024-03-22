@@ -25,10 +25,7 @@
           "lastMileTravelString": "8.9 km",
           "iconType": "ICON_TYPE_EMPTY"
         },
-       
-        
-    
-       
+      
       },
      
     

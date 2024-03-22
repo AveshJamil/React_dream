@@ -11,16 +11,14 @@ const Body =()=>{
  //const [restdatalist,setrestdatalist]=useState(restcard);
  //setrestdatalist([]);
 
- const arr=useState(restcard);
+const [restdatalist,setrestdatalist]=useState(restcard);
 
- //console.log(arr);
 
-const restdatalist=arr[0];
-
-console.log(restdatalist);
-const setrestdatalist=arr[1];
 
 //console.log(restdatalist);
+
+//console.log(restdatalist);
+
 
 
 //   let restdatalist=
