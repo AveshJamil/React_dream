@@ -1,6 +1,6 @@
 import ResturantCard from "./ResturantCard";
 
-import { useState }  from "react" ;
+import { useEffect, useState }  from "react" ;
 
 import {restcard}  from "../Utils/Mockdata";
 
@@ -8,92 +8,15 @@ import {restcard}  from "../Utils/Mockdata";
 
 const Body =()=>{
 
- //const [restdatalist,setrestdatalist]=useState(restcard);
- //setrestdatalist([]);
 
 const [restdatalist,setrestdatalist]=useState(restcard);
 
+useEffect(()=>{
+
+    console.log("useeffect called");
 
 
-//console.log(restdatalist);
-
-//console.log(restdatalist);
-
-
-
-//   let restdatalist=
-// [
-//     {
-//     "info": {
-//       "id": "16061",
-//       "name": "KFC",
-//       "cloudinaryImageId": "f01666ac73626461d7455d9c24005cd4",
-//       "costForTwo": "₹400 for two",
-//       "cuisines": [
-//         "Burgers",
-//         "Biryani",
-//         "American",
-//         "Snacks",
-//         "Fast Food",
-        
-//       ],
-//       "avgRating": 3.6,
-//       "totalRatingsString": "10K+",
-//       "sla": {
-//         "deliveryTime": 33,
-//       },
-     
-//     }, 
-  
-//   },
-//   {
-//     "info": {
-//       "id": "16063",
-//       "name": "MCD",
-//       "cloudinaryImageId": "f01666ac73626461d7455d9c24005cd4",
-//       "costForTwo": "₹400 for two",
-//       "cuisines": [
-//         "Burgers",
-//         "Biryani",
-//         "American",
-//         "Snacks",
-//         "Fast Food",
-        
-//       ],
-//       "avgRating": 4.6,
-//       "totalRatingsString": "10K+",
-//       "sla": {
-//         "deliveryTime": 33,
-//       },
-     
-//     }, 
-  
-//   },
-//   {
-//     "info": {
-//       "id": "160614",
-//       "name": "Aslam",
-//       "cloudinaryImageId": "f01666ac73626461d7455d9c24005cd4",
-//       "costForTwo": "₹400 for two",
-//       "cuisines": [
-//         "Burgers",
-//         "Biryani",
-//         "American",
-//         "Snacks",
-//         "Fast Food",
-        
-//       ],
-//       "avgRating": 4.2,
-//       "totalRatingsString": "10K+",
-//       "sla": {
-//         "deliveryTime": 33,
-//       },
-     
-//     }, 
-  
-//   }
-// ];
-
+},[]);
 
     return(
   
