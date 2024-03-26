@@ -13,11 +13,25 @@ const [restdatalist,setrestdatalist]=useState(restcard);
 
 useEffect(()=>{
 
-    console.log("useeffect called");
-
+fetchdata();
 
 },[]);
 
+
+
+  const fetchdata= async()=>{
+
+    const data= await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.07480&lng=72.88560&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+    );
+
+    const json=await data.json();
+
+    console.log(json);
+
+
+
+
+  }
     return(
   
     <div className="body">
@@ -29,11 +43,6 @@ useEffect(()=>{
  const filter =restdatalist.filter((res)=>res.info.avgRating==4.2);
  setrestdatalist(filter);
 
- //console.log(setrestdatalist);
-
-
-
-// console.log(filter);
     
 
 }}>This is top Rated Resturant</button>
