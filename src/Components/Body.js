@@ -26,9 +26,7 @@ fetchdata();
 
     const json=await data.json();
 
-    console.log(json);
-
-
+    console.log(json.data.cards);
 
 
   }
