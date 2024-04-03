@@ -26,7 +26,13 @@ fetchdata();
 
     const json=await data.json();
 
-    console.log(json.data.cards);
+     const restaurantsData = json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants;
+     setrestdatalist(restaurantsData);
+
+
+   // const restaurantsData = json.data.cards[0].card.card.gridElements.infoWithStyle;
+    console.log(restaurantsData);
+
 
 
   }
